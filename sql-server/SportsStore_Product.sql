@@ -25,3 +25,6 @@ INSERT INTO [dbo].[Products]([ProductID], [Name], [Description], [Category], [Pr
 INSERT INTO [dbo].[Products]([ProductID], [Name], [Description], [Category], [Price]) VALUES(7,'Unsteady Chair', 'Secretly give your opponent a disadvantage', 'Chess', 29.95) 
 INSERT INTO [dbo].[Products]([ProductID], [Name], [Description], [Category], [Price]) VALUES(8,'Human Chess Board', 'A fun game for the family', 'Chess', 75.00) 
 INSERT INTO [dbo].[Products]([ProductID], [Name], [Description], [Category], [Price]) VALUES(9,'Bling-Bling King', 'Gold-plated, diamond-studded King', 'Chess', 1200.00) 
+
+-- Select all data
+SELECT * FROM [dbo].[Products]
