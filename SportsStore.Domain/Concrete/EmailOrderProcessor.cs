@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using SportsStore.Domain.Entities;
 using System.Net.Mail;
 using System.Net;
+using System.IO;
 
 namespace SportsStore.Domain.Concrete
 {
@@ -20,7 +21,7 @@ namespace SportsStore.Domain.Concrete
         public string ServerName = "smtp.example.com";
         public int ServerPort = 587;
         public bool WriteAsFile = false;
-        public string FileLocation = @"c:\sports_store_emails";
+        public string FileLocation = @"D:\TranThiNgocTrang\Study\ASP.NET\workspace\SportsStore\my_store_result\sports_store_emails";
     }
     public class EmailOrderProcessor : IOrderProcessor
     {
@@ -29,7 +30,7 @@ namespace SportsStore.Domain.Concrete
         {
             emailSettings = settings;
         }
-        public void ProcessorOrder(Cart cart, ShippingDetails shippingInfo)
+        public void ProcessOrder(Cart cart, ShippingDetails shippingInfo)
         {
             using (var smtpClient = new SmtpClient())
             {
