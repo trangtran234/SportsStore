@@ -1,0 +1,2 @@
+[01-Nov-2018]
+Use Html.EditorForModel helper method to implement a Edit view

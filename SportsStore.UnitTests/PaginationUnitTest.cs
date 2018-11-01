@@ -359,12 +359,5 @@ namespace SportsStore.UnitTests
             // Assert - check that I am passing a valid model to the view
             Assert.AreEqual(true, result.ViewData.ModelState.IsValid);
         }
-
-        [TestMethod]
-        public void Can_Check_Current_Solution_Path()
-        {
-
-            EmailOrderProcessor emailOrderProcessor = new EmailOrderProcessor();
-        }
     }
 }

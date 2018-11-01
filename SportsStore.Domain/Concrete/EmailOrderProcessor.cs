@@ -8,6 +8,7 @@ using SportsStore.Domain.Entities;
 using System.Net.Mail;
 using System.Net;
 using System.IO;
+using System.Reflection;
 
 namespace SportsStore.Domain.Concrete
 {
