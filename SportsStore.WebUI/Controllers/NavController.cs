@@ -21,7 +21,8 @@ namespace SportsStore.WebUI.Controllers
                                     .Select(x => x.Category)
                                     .Distinct()
                                     .OrderBy(x => x);                      
-            return PartialView("FlexMenu", categories);
+            // Set up code for Mobile front-end form                      
+            return PartialView("FlexMenu.Mobile", categories);
         }
     }
 }
