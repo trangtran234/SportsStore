@@ -20,7 +20,7 @@ namespace SportsStore.WebUI.Controllers
             IEnumerable<string> categories = repository.Products
                                     .Select(x => x.Category)
                                     .Distinct()
-                                    .OrderBy(x => x);                      
+                                    .OrderBy(x => x);
             // Set up for Mobile front-end form                      
             return PartialView("FlexMenu.Mobile", categories);
         }
