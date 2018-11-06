@@ -27,4 +27,10 @@ INSERT INTO [dbo].[Products]([ProductID], [Name], [Description], [Category], [Pr
 INSERT INTO [dbo].[Products]([ProductID], [Name], [Description], [Category], [Price]) VALUES(9,'Bling-Bling King', 'Gold-plated, diamond-studded King', 'Chess', 1200.00) 
 
 -- Select all data
+USE [SportsStore]
 SELECT * FROM [dbo].[Products]
+
+-- Edit Product table
+ALTER TABLE [dbo].[Products]    
+ADD [ImageData]     VARBINARY (MAX) NULL,        
+[ImageMimeType] VARCHAR (50)    NULL;  
